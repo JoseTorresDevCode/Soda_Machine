@@ -14,7 +14,7 @@ namespace SodaMachine
         //Constructor
         public Penny()
         {
-            name = "penny";
+            name = "Penny";
             value = .01;
             Value = .01;
         }

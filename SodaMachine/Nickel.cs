@@ -13,7 +13,7 @@ namespace SodaMachine
         //Constructor
         public Nickel()
         {
-            name = "nickel";
+            name = "Nickel";
             value = .05;
             Value = .05;
         }
