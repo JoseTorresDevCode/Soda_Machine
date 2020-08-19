@@ -10,7 +10,7 @@ namespace SodaMachine
     {
         //Member Variables
         protected double availableFunds;
-
+        public double AvailableFunds;
         //Constructor
 
         //Member Methods
