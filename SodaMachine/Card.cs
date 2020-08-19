@@ -8,5 +8,13 @@ namespace SodaMachine
 {
     class Card
     {
+        //Member Variables
+        protected double availableFunds;
+
+        //Constructor
+
+        //Member Methods
+                    // display available funds
+                    
     }
 }

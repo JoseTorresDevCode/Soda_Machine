@@ -6,14 +6,18 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class Wallet
+    class Nickel : Coin
     {
         //Member Variables
-        
+             
         //Constructor
+        public Nickel()
+        {
+            name = "nickel";
+            value = .05;
+            Value = .05;
+        }
 
         //Member Methods
-                 //payment method
-                 
     }
 }

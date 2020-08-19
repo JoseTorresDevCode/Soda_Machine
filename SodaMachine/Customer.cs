@@ -8,5 +8,12 @@ namespace SodaMachine
 {
     class Customer
     {
+        //Member Variables
+                   // Wallet
+                   // Backpack
+
+        //Constructor
+
+        //Member Methods
     }
 }

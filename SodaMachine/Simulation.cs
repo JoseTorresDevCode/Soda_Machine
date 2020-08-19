@@ -8,5 +8,10 @@ namespace SodaMachine
 {
     class Simulation
     {
+        //Member Variables
+                  
+        //Constructor
+
+        //Member Methods
     }
 }

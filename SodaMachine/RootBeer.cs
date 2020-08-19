@@ -6,14 +6,12 @@ using System.Threading.Tasks;
 
 namespace SodaMachine
 {
-    class Wallet
+    class RootBeer : Can
     {
         //Member Variables
-        
+
         //Constructor
 
         //Member Methods
-                 //payment method
-                 
     }
 }
