@@ -10,10 +10,20 @@ namespace SodaMachine
     {
         //Member Variables
         protected double cost;
-        public double Cost;
+        
         public string name;
 
         //Constructor
+        public double Cost
+        {
+            get
+            {
+                return cost;
+            }
+
+
+
+        }
 
         //Member Methods
     }
