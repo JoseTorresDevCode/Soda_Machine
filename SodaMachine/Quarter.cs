@@ -16,7 +16,7 @@ namespace SodaMachine
         {
             name = "Quarter";
             value = .25;
-            Value = .25;
+            
         }
 
         //Member Methods

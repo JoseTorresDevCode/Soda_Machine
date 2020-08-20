@@ -9,14 +9,14 @@ namespace SodaMachine
     class Dime : Coin
     {
         //Member Variables
-
+        
 
         //Constructor
         public Dime()
         {
             name = "Dime";
             value = .10;
-            Value = .10;
+            
         }
 
         //Member Methods
