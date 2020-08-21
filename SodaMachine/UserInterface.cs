@@ -13,7 +13,7 @@ namespace SodaMachine
     {
         //Member Variables
         //soda price? 
-
+        
         //private static double colaPrice = .35;
         //private static double rootBeerPrice = .60;
         // private static double orangeSodaPrice = .06;
@@ -56,6 +56,8 @@ namespace SodaMachine
 
         public static string PayWithCoin()
         {
+            
+
             Console.WriteLine("please enter coins to pay");
             Console.WriteLine("Enter: quarter Enter: dime Enter: nickel Enter: penny");
 
@@ -81,7 +83,19 @@ namespace SodaMachine
             return coinInput;
         }
 
-
+        //public static double DisplaySodaPrice()
+        //{
+        //    OrangeSoda orangeSoda = new OrangeSoda();
+        //    Cola cola = new Cola();
+        //    RootBeer rootbeer = new RootBeer();
+        //    Quarter quarter = new Quarter();
+        //    Dime dime = new Dime();
+        //    Nickel nickel = new Nickel();
+        //    Penny penny = new Penny();
+          
+            
+            
+        //}
 
 
         // Greet(make your selection) 

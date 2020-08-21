@@ -12,8 +12,17 @@ namespace SodaMachine
     {
         //Member Variables
         
+        OrangeSoda orangeSoda = new OrangeSoda();
+        Cola cola = new Cola();
+        RootBeer rootbeer = new RootBeer();
+        Quarter quarter = new Quarter();
+        Dime dime = new Dime();
+        Nickel nickel = new Nickel();
+        Penny penny = new Penny();
         public List<Can> machineInventory;
         public List<Coin> register;
+        
+        
         //Constructor
         public SodaMachine()
         {
@@ -21,6 +30,7 @@ namespace SodaMachine
             register = new List<Coin>();
             FillRegister();
             FillSodaMachine();
+            Console.ReadLine();
         }
             
         //Member Methods
@@ -63,16 +73,28 @@ namespace SodaMachine
         }
 
 
-        //public string SellASoda(Customer customer)
-       // {
+        public string SellASoda(Customer customer)
+        {
             //Take in payment
 
-           // Console.WriteLine($"Your selection is: + {UserInterface.MakeASelection()}");
-          // / 
-            
-            
-            
-            
+            UserInterface.MakeASelection();
+            string userInput = Console.ReadLine();
+            if (userInput == orangeSoda.name || userInput == cola.name || userInput == rootbeer.name)
+            {
+
+
+            }
+
+
+            UserInterface.PayWithCoin();
+            string coinInput = Console.ReadLine();
+            if (coinInput == quarter.name || coinInput == dime.name || coinInput == nickel.name || coinInput == penny.name)
+            {
+
+            }
+
+
+
             //Soda choice - pass in?
 
 
@@ -85,7 +107,7 @@ namespace SodaMachine
             //customer.backpack.cans.Add(machineInventory[0]);
 
 
-       // }
+             }
 
-    }
+       }
 }

@@ -10,10 +10,9 @@ namespace SodaMachine
     {
         //Member Variables
         protected double value;
-
         public string name;
+        //properties 
 
-        //Constructor
         public double Value
         {
             get
@@ -21,12 +20,12 @@ namespace SodaMachine
                 return value;
             }
 
-
-
         }
+
+        //Constructor
 
         //Member Methods
 
-        
+
     }
 }

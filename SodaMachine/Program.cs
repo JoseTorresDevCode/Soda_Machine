@@ -11,11 +11,14 @@ namespace SodaMachine
     {
         static void Main(string[] args)
         {
-
-            UserInterface.MakeASelection();
-            UserInterface.PayWithCoin();
+         //   SodaMachine sellASoda = new SodaMachine();
+          //  sellASoda.SellASoda();
+              UserInterface.MakeASelection();
+            //UserInterface.PayWithCoin();
+            SodaMachine sellASoda = new SodaMachine();
+           // sellASoda.SellASoda();
             Console.ReadLine();
-
+            
          
         }
     }

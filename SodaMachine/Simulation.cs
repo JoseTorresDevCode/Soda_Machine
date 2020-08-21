@@ -14,10 +14,10 @@ namespace SodaMachine
         //Constructor
 
         //Member Methods
-        public void ValidateUserSelection()
-        {
-           string choice =  UserInterface.MakeASelection();
-            
-        }
     }
+   // public void RunSodaMachine()
+    //{
+   //     UserInterface.MakeASelection();
+   // }
+
 }
