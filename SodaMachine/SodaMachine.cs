@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -10,9 +11,7 @@ namespace SodaMachine
     class SodaMachine
     {
         //Member Variables
-        int orangeSodaCount;
-        int colaCount;
-        int rootBeerCount;
+        
         public List<Can> machineInventory;
         public List<Coin> register;
         //Constructor
@@ -63,6 +62,30 @@ namespace SodaMachine
             }
         }
 
-        
+
+        //public string SellASoda(Customer customer)
+       // {
+            //Take in payment
+
+           // Console.WriteLine($"Your selection is: + {UserInterface.MakeASelection()}");
+          // / 
+            
+            
+            
+            
+            //Soda choice - pass in?
+
+
+
+
+
+
+
+            //Cola cola = new Cola();
+            //customer.backpack.cans.Add(machineInventory[0]);
+
+
+       // }
+
     }
 }

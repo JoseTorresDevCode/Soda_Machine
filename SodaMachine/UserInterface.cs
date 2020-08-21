@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace SodaMachine
@@ -10,34 +12,79 @@ namespace SodaMachine
     static class UserInterface
     {
         //Member Variables
-                   //soda price? 
-                    
+        //soda price? 
+
         //private static double colaPrice = .35;
         //private static double rootBeerPrice = .60;
-       // private static double orangeSodaPrice = .06;
-       // private static double quarterValue = .25;
-       // private static double dimeValue = .10;
-       // private static double nickelValue = .05;
-       // private static double pennyVaule = .01
+        // private static double orangeSodaPrice = .06;
+        // private static double quarterValue = .25;
+        // private static double dimeValue = .10;
+        // private static double nickelValue = .05;
+        // private static double pennyVaule = .01
 
         //Constructor
 
         //Member Methods
-        static UserInterface()
+        public static string MakeASelection()
         {
-            string userSelection;
-            Console.WriteLine("Please enter your Selection");
-            userSelection = Console.ReadLine();
-        }
-        
-        
+            Console.WriteLine("Please Enter your selection");
+            Console.WriteLine("Enter 1: Orange Soda / Enter 2: Root Beer / Enter 3: Cola");
 
-        
-        
-        
-        
-                  // Greet(make your selection) 
-                  // insert coin or pay with card 
-                 //  disperse change? 
+            string userInput = "";
+            bool validChoice = false;
+            while (validChoice == false)
+            {
+                
+                userInput = Console.ReadLine();
+                if (userInput == "1" || userInput == "2" || userInput == "3")
+                {
+                    validChoice = true;
+                    Console.WriteLine("You have selected:" + " " + userInput);
+                }
+                else
+                {
+                    Console.WriteLine("Your choice was invalid, please choose again");
+                    return MakeASelection();
+                }
+
+            }
+            return userInput;
+
+            
+        }
+
+
+        public static string PayWithCoin()
+        {
+            Console.WriteLine("please enter coins to pay");
+            Console.WriteLine($"Enter: quarter Enter: dime Enter: nickel Enter: penny");
+
+            string userInput = "";
+            bool isCoinSelected = false;
+
+            while (isCoinSelected == false)
+            {
+                if (userInput == "quarter" || userInput == "dime" || userInput == "nickel" || userInput == "penny")
+
+                {
+                    Console.WriteLine("You entered a:" + userInput);
+                    isCoinSelected = true;
+                }
+                else
+                {
+                    Console.WriteLine("You entered an invalid coin. Please enter a valid coin.");
+                    return PayWithCoin();
+                }
+
+            }
+            return userInput;
+        }
+
+
+
+
+        // Greet(make your selection) 
+        // insert coin or pay with card 
+        //  disperse change? 
     }
 }

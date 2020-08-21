@@ -9,7 +9,7 @@ namespace SodaMachine
     class BackPack
     {
         //Member Variables
-        List<Can> cans;
+        public List<Can> cans;
 
         //Constructor
         public BackPack()

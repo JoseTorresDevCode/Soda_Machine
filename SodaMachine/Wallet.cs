@@ -15,7 +15,7 @@ namespace SodaMachine
         //Constructor
         public Wallet()
         {
-            coins = new List<Coin>;
+            coins = new List<Coin>();
             AddWalletCoins();
         }
 

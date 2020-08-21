@@ -14,7 +14,6 @@ namespace SodaMachine
         public RootBeer()
         {
             cost = .60;
-            
             name = "RootBeer";
         }
         //Member Methods
