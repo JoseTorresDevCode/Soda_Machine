@@ -57,18 +57,19 @@ namespace SodaMachine
         public static string PayWithCoin()
         {
             Console.WriteLine("please enter coins to pay");
-            Console.WriteLine($"Enter: quarter Enter: dime Enter: nickel Enter: penny");
+            Console.WriteLine("Enter: quarter Enter: dime Enter: nickel Enter: penny");
 
-            string userInput = "";
+            string coinInput = "";
             bool isCoinSelected = false;
 
             while (isCoinSelected == false)
             {
-                if (userInput == "quarter" || userInput == "dime" || userInput == "nickel" || userInput == "penny")
+                coinInput = Console.ReadLine();
+                if (coinInput == "quarter" || coinInput == "dime" || coinInput == "nickel" || coinInput == "penny")
 
                 {
-                    Console.WriteLine("You entered a:" + userInput);
                     isCoinSelected = true;
+                    Console.WriteLine("You entered a:" + coinInput);
                 }
                 else
                 {
@@ -77,7 +78,7 @@ namespace SodaMachine
                 }
 
             }
-            return userInput;
+            return coinInput;
         }
 
 
